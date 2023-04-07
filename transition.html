@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS TRANSLATE</title>
+	<style>
+		div
+		{
+			box-shadow:0 0 10px brown;
+			width:400px;
+			height:250px;
+			margin:60px auto;
+			overflow:hidden;
+			position:relative;
+		}
+		div:hover
+		{
+			cursor:pointer;
+		}
+		div>img
+		{
+			width:inherit;
+			transform:translateX(50%);
+			transition:all 1s linear 0s;
+		}
+		div:hover>img
+		{
+			transform:translateX(0%);
+		}
+		div>.content
+		{
+			background-color:brown;
+			color:white;
+			position:absolute;
+			top:-60px;
+			left:0px;
+			width:50%;
+			transition:all 1s linear 0s;
+		}
+		div:hover>.content
+		{
+			transform:translateX(-100%);
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="https://pbs.twimg.com/profile_images/1576615050093416448/I3nOkeGf_400x400.jpg">
+		<div cl ass="content">
+			<h1>Prabhas:-</h1>
+			<p>In nisi quis velit qui minim in ut esse pariatur in veniam reprehenderit elit adipisicing dolore mollit anim. Ad reprehenderit fugiat deserunt consectetur labore duis exercitation et incididunt laboris reprehenderit aliquip proident magna officia. Voluptate magna ea voluptate voluptate aliquip aliqua dolor incididunt enim aliqua nostrud nostrud excepteur.</p>
+		</div>
+	</div>
+</body>
+</html>
