@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS TRANSFORMS</title>
+	<style>
+		div
+		{
+			box-shadow:0 0 10px blue;
+			width:300px;
+			height:300px;
+			margin:60px auto;
+			position:relative;
+			overflow:hidden;
+		}
+		div:hover
+		{
+			cursor:pointer;
+		}
+		div>img
+		{
+			width:inherit;
+			height:inherit;
+		}
+		div>#one
+		{
+			background-color:rgba(255,0,0,1.0);
+			position:absolute;
+			top:-60px;
+			left:0px;
+			transition:all 1s linear 3s;
+		}
+		div:hover>#one
+		{
+			transform:translateY(-100%);
+		}
+		div>#two
+		{
+			background-color:rgba(0,255,0,1.0);
+			position:absolute;
+			top:-60px;
+			left:0px;
+			transition:all 1s linear 2s;
+		}
+		div:hover>#two
+		{
+			transform:translateX(100%);
+		}
+		div>#three
+		{
+			background-color:rgba(0,0,255,1.0);
+			position:absolute;
+			top:-60px;
+			left:0px;
+			transition:all 1s linear 1s;
+		}
+		div:hover>#three
+		{
+			transform:translateY(100%);
+		}
+		div>#four
+		{
+			background-color:rgba(0,0,0,1.0);
+			position:absolute;
+			top:-60px;
+			left:0px;
+			transition:all 1s linear 0s;
+		}
+		div:hover>#four
+		{
+			transform:translateX(-100%);
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="https://images.livemint.com/img/2022/09/09/600x338/Virat_Kohli_1662684944319_1662684944569_1662684944569.jpg">
+		<div id="one"></div>
+		<div id="two"></div>
+		<div id="three"></div>
+		<div id="four"></div>
+	</div>
+</body>
+</html>
